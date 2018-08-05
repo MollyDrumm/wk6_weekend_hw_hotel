@@ -17,6 +17,15 @@ public class Bedroom  extends Room {
 
     }
 
+    public int getNightlyRate() {
+        return nightlyRate;
+    }
+
+
+    public int roomHasNumber(){
+        return roomNumber;
+    }
+
     public void addGuest(Guest guest){
         this.newGuest.add(guest);
     }
@@ -25,4 +34,7 @@ public class Bedroom  extends Room {
         return this.newGuest.size();
     }
 
+    public BedroomType getRoomType() {
+        return roomType;
+    }
 }

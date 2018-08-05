@@ -9,4 +9,6 @@ public class ConferenceRoom extends Room {
         this.name = name;
         this.dailyRate = dailyRate;
     }
+
+
 }

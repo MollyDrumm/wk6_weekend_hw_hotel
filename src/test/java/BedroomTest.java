@@ -17,10 +17,24 @@ public class BedroomTest {
         guest = new Guest();
     }
 
+    @Test
+    public void checkNightlyRate() {
+        assertEquals(70, bedroom.getNightlyRate());
+    }
+
+    @Test
+    public void checkRoomHasNumber(){
+        assertEquals(20, bedroom.roomHasNumber());
+    }
 
     @Test
     public void addGuest() {
         this.bedroom.addGuest(guest);
         assertEquals(1, bedroom.guestCount());
+    }
+
+    @Test
+    public void checkRoomType() {
+        assertEquals(BedroomType.SINGLE, bedroom.getRoomType() );
     }
 }
