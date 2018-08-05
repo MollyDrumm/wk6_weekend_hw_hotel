@@ -9,5 +9,10 @@ public enum BedroomType {
     BedroomType(int capacity) {
         this.capacity = capacity;
     }
+
+    public void getAllBedroomTypes(){
+         BedroomType.values();
+    }
+
 }
 
